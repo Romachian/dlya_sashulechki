@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Для Саши 💗</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- фоновые сердечки -->
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="wrap">
+
+    <!-- Шаг 1 -->
+    <section class="card step active" data-step="1">
+      <h1 class="title">Привет, Саша 💗</h1>
+      <p class="lead">Я сделал это специально для тебя!</p>
+      <p class="muted">Пройди мини-игру, чтобы открыть сюрприз.</p>
+      <button class="btn" id="startBtn">Начать →</button>
+    </section>
+
+    <!-- Шаг 2 -->
+    <section class="card step" data-step="2">
+      <h2 class="title">Почему я тебя люблю</h2>
+      <p class="muted">Нажми на каждое сердечко, чтобы раскрыть причину</p>
+
+      <div class="reasons" id="reasons"></div>
+
+      <div class="actions">
+        <button class="btn" id="toMemoryBtn" disabled>Далее →</button>
+      </div>
+    </section>
+
+    <!-- Шаг 3 -->
+    <section class="card step" data-step="3">
+      <h2 class="title">Давай сыграем перед сюрпризом</h2>
+      <p class="muted">Найди все пары!</p>
+
+      <div class="stats">Ходы: <span id="moves">0</span></div>
+      <div class="grid" id="grid" aria-label="Игра найди пары"></div>
+
+      <div class="actions">
+        <button class="btn" id="toGalleryBtn" disabled>Далее →</button>
+      </div>
+    </section>
+
+    <!-- Шаг 4 -->
+    <section class="card step" data-step="4">
+      <h2 class="title">Наши воспоминания</h2>
+      <p class="muted">Моменты, которые я храню в сердце 💗</p>
+
+      <div class="gallery" id="gallery"></div>
+
+      <div class="actions">
+        <button class="btn" id="toFinalBtn">Далее →</button>
+      </div>
+    </section>
+
+    <!-- Шаг 5 -->
+    <section class="card step" data-step="5">
+      <h2 class="title">С 8 Марта, Саша 🌷</h2>
+      <p class="lead" id="finalText">Я хочу провести с тобой наше будущее.</p>
+      <p class="muted">Спасибо, что ты у меня есть 💗</p>
+
+      <div class="actions">
+        <button class="btn secondary" id="restartBtn">Пройти ещё раз ↻</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
